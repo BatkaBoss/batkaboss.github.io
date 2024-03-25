@@ -1,0 +1,66 @@
+.menuWindow {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.menuButton {
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(45deg, rgb(96, 85, 255), rgb(51, 43, 161));
+  border-radius: 18px;
+  border: 2px solid #00eeff;
+  box-shadow: 0px 0px 50px rgba(114, 234, 255, 0.3);
+}
+
+.menuButton > p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+button {
+  width: 90%;
+  height: 45px;
+  background: none;
+  border: 2px solid aqua;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, aqua, rgb(0, 132, 255));
+  color: black;
+}
+
+.icon {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .menuButton {
+    width: 350px;
+    height: 600px;
+  }
+}
