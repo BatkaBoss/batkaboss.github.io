@@ -99,7 +99,7 @@ a:hover {
 /* FOOTER */
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   display: flex;
   align-items: center;
@@ -107,7 +107,8 @@ footer {
   height: 40px;
   width: 100%;
   background: #131313;
-  animation: show 10s ease;
+  animation: show 3s ease;
+  z-index: -1;
 }
 
 /* ANIMATIONS */
@@ -135,12 +136,18 @@ footer {
     font-size: 1.3em;
     gap: 10px;
   }
-  
   .head-menu > p {
     font-size: 1.3em;
   }
   .clicker-section > img {
     width: 280px;
     height: 280px;
+  }
+}
+
+@media (max-width: 420px) {
+  .clicker-section > img {
+    width: 220px;
+    height: 220px;
   }
 }
