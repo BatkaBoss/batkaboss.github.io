@@ -70,14 +70,14 @@ h2 {
 span {
   padding: 3px 7px;
   border-radius: 4px;
-  background: rgb(255, 123, 0);
+  background: rgb(0, 119, 119);
   font-weight: bold;
 }
 
 /* FOOTER */
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   display: flex;
   align-items: center;
@@ -128,7 +128,7 @@ footer {
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 505px) {
   .head {
     font-size: 0.5em;
   }
@@ -140,5 +140,8 @@ footer {
   }
   h2 {
     opacity: 0;
+  }
+  body {
+    overflow: scroll;
   }
 }
