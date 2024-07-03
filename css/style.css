@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background: #070c0f;
+}
+
+.container {
+  max-width: 95%;
+  margin: 30px auto;
+  padding: 0px 15px 0px 15px;
+}
+
+span {
+  color: #9ee71a;
+}
+
+/* HEADER */
+.head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.name > p {
+  transition: all 0.3s ease;
+}
+.name > p:hover {
+  color: #9ee71a;
+  text-shadow: 0px 0px 15px rgba(158, 231, 26, 0.7);
+}
+.name > .LogoImg {
+  width: 31px;
+  height: 25px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.items > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+.items > ul > li > a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+}
+.items > ul > li > a:hover {
+  color: #9ee71a;
+}
+.items > .click {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: #9ee71a;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+.items > .click:hover {
+  box-shadow: 0px 0px 35px rgba(158, 231, 26, 0.3);
+}
+
+#main-head {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.decor {
+  filter: drop-shadow(0px 0px 50px rgba(158, 231, 26, 0.5));
+}
+
+.description > h1 {
+  font-size: 2.8em;
+  max-width: 600px;
+}
+.description > p {
+  margin-top: 10px;
+  max-width: 600px;
+  font-size: 1.3em;
+  line-height: 30px;
+  opacity: 0.7;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+.buttons .go {
+  width: 150px;
+  height: 50px;
+  margin-right: 10px;
+  border: none;
+  background: #9ee71a;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.buttons .go:hover {
+  box-shadow: 0px 0px 35px rgba(158, 231, 26, 0.3);
+}
+.buttons .click {
+  width: 220px;
+  height: 50px;
+  border: 2px solid #9ee71a;
+  background: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.buttons .click:hover {
+  color: #000;
+  background: #9ee71a;
+  box-shadow: 0px 0px 35px rgba(158, 231, 26, 0.3);
+}
+
+/* MAIN */
+.main {
+  margin-top: 170px;
+}
+
+/* PRICE_BLOCK */
+.price {
+  margin: auto;
+  text-align: center;
+}
+.price > h1 {
+  font-size: 2.8em;
+  color: #9ee71a;
+}
+
+.price-items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 550px;
+}
+
+[class^=priceItem-] {
+  padding: 60px 0px 0px 0px;
+  width: 440px;
+  height: 520px;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+[class^=priceItem-] > h3 {
+  font-weight: 600;
+  font-size: 2.2em;
+}
+[class^=priceItem-] > h2 {
+  font-weight: 900;
+  font-size: 2.5em;
+}
+[class^=priceItem-] > h3, [class^=priceItem-] h2 {
+  padding-top: 20px;
+  color: #000;
+}
+[class^=priceItem-] .decr {
+  position: static;
+  top: 20px;
+  width: 100%;
+  height: 100px;
+  border-radius: 100%;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+[class^=priceItem-]:hover {
+  transform: translateY(5px);
+}
+
+.priceItem-1, .priceItem-3 {
+  align-self: flex-end;
+}
+
+.priceItem-1 {
+  background: #84878e;
+}
+.priceItem-1 > .decr {
+  background: #46474c;
+}
+
+.priceItem-2 {
+  padding: 40px 0px 0px 0px;
+  background: #9ee71a;
+  box-shadow: 0px 0px 35px rgba(158, 231, 26, 0.3);
+}
+.priceItem-2 > .decr {
+  background: #e2a039;
+}
+
+.priceItem-3 {
+  background: #935c2d;
+}
+.priceItem-3 > .decr {
+  background: #6d4019;
+}
+
+.more {
+  width: 400px;
+  height: 60px;
+  margin-top: 70px;
+  border: none;
+  background: #9ee71a;
+  border-radius: 5px;
+  font-size: 1.8em;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.more:hover {
+  box-shadow: 0px 0px 35px rgba(158, 231, 26, 0.3);
+}
+
+/* ABOUT US_BLOCK */
+#about-block {
+  margin-top: 130px;
+}
+
+.about > h1 {
+  font-size: 3em;
+}
+.about > p {
+  font-size: 2em;
+  opacity: 0.7;
+  max-width: 60%;
+}
+.about > h1, .about p {
+  text-align: start;
+}
+
+.about-content {
+  text-align: center;
+  margin: 100px auto;
+}
+.about-content > img {
+  width: 75%;
+}
+
+/* FOOTER */
+#footer__section {
+  margin-top: 50px;
+  height: 200px;
+  background: #060a0c;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0px -5px 15px #060a0c;
+}
+
+.footer__section_block {
+  padding: 35px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__section_block a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+}
+.footer__section_block a:hover {
+  color: #9ee71a;
+}
+
+.footer__section__settings {
+  text-align: end;
+}
+
+.footer__section__settings_privicy-terms {
+  color: #c2c2c2;
+}
+
+.footer__section__settings_privicy-terms > a {
+  color: #c2c2c2;
+  transition: all 0.3s ease;
+}
+
+.footer__section__social {
+  text-align: start;
+}
+
+.footer__section__social_nav a {
+  color: #c2c2c2;
+  transition: all 0.3s ease;
+}
+
+.footer__section__social_project a {
+  color: #c2c2c2;
+  transition: all 0.3s ease;
+}
+
+.footer__section__social_network {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__section__social_network > a > img {
+  padding: 10px;
+  background: #1f1f1f;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.GitHub {
+  width: 55px;
+  height: 55px;
+}
+.GitHub:hover {
+  background: #000;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Telegram {
+  width: 55px;
+  height: 55px;
+}
+.Telegram:hover {
+  background: #00aeff;
+  box-shadow: 0 5px 20px 5px rgba(0, 204, 255, 0.2);
+}
+
+.YouTube {
+  width: 55px;
+  height: 55px;
+}
+.YouTube:hover {
+  background: #ff0000;
+  box-shadow: 0 5px 20px 5px rgba(255, 0, 0, 0.2);
+}
+
+.TrafficSigns {
+  width: 55px;
+  height: 55px;
+}
+.TrafficSigns:hover {
+  background: #ffffff;
+  box-shadow: 0 5px 20px 5px rgba(255, 255, 255, 0.2);
+}
+
+.Qiwi {
+  width: 55px;
+  height: 55px;
+}
+.Qiwi:hover {
+  background: #ff910b;
+  box-shadow: 0 5px 20px 5px rgba(255, 143, 16, 0.2);
+}
+
+::-moz-selection {
+  background: #567e0d;
+}
+
+::selection {
+  background: #567e0d;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070c0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ee71a;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
