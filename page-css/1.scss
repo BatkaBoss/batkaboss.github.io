@@ -1,0 +1,75 @@
+body {
+  color: black;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+}
+
+.imga {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-flow: column;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.icon {
+  font-size: 7em;
+  margin-bottom: 30px;
+  animation: iconRotate 10s ease infinite;
+}
+
+.button-33 {
+  background-color: #fefefe;
+  border-radius: 100px;
+  box-shadow: rgba(196, 196, 196, 0.2) 0 -25px 18px -14px inset,rgba(189, 189, 189, 0.15) 0 1px 2px,rgba(184, 184, 184, 0.15) 0 2px 4px,rgba(170, 170, 170, 0.15) 0 4px 8px,rgba(177, 185, 180, 0.15) 0 8px 16px,rgba(172, 172, 172, 0.15) 0 16px 32px;
+  color: rgb(110, 110, 110);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  transform: rotateZ(-2deg);
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(175, 175, 175, 0.35) 0 -25px 18px -14px inset,rgba(189, 189, 189, 0.25) 0 1px 2px,rgba(136, 136, 136, 0.25) 0 2px 4px,rgba(180, 180, 180, 0.25) 0 4px 8px,rgba(156, 156, 156, 0.25) 0 8px 16px,rgba(92, 92, 92, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.h {
+  transform: rotateZ(-1.8deg);
+}
+
+.text {
+  padding: 20px;
+  background: #d1d1d1;
+  transform: rotateZ(0.5deg);
+  border-radius: 8px;
+}
+
+@keyframes iconRotate {
+  0% {
+    transform: rotateZ(0deg)
+  } 25% {
+    transform: rotateZ(360deg)
+  } 50% {
+    transform: rotateZ(-360deg)
+  } 100% {
+    transform: rotateZ(0deg)
+  }
+  
+}

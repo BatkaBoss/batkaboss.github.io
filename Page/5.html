@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMS</title>
+  <link rel="stylesheet" href="../page-css/5.css">
+  <link rel="icon" href="../icon/лиса.png">
+</head>
+<body>
+  <p class="hint">Открой письмо</p>
+  <div class="container">
+    <div class="content">
+      <div class="envelope" onclick="openCard()"></div>
+      <div class="letter">
+        <div class="body">
+          <span class="close" onclick="event.stopPropagation(); closeCard()">x</span>
+          <div class="message">I love you, Ul'va.</div>
+        </div>
+      </div>
+      <div class="shadow"></div>
+    </div>
+  </div> 
+  <a class="button-33" href="../Page/Result.html">Дальше</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+  
+  <script src="../source/sms.js"></script>
+</body>
+</html>

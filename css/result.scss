@@ -1,0 +1,129 @@
+body {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+.imga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-flow: column;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 800px;
+}
+
+.text {
+  z-index: -1;
+  padding: 20px;
+  color: black;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+}
+
+.icon {
+  color: rgb(0, 255, 149);
+  font-size: 12em;
+  filter: drop-shadow(0px 0px 10px rgb(0, 255, 149));
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #4cffc0;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+.youtoo {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 300px;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 250px black;
+  background: black;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+
+.button-33 {
+  margin: auto;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
